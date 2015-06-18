@@ -1,4 +1,5 @@
 #!/bin/bash
+# Name: check_dirempty.sh
 #
 # This plugin checks if folder is empty. OK status"
 # If directory contains 1 or 2 files, the check will exit with status code 1."
@@ -12,7 +13,7 @@ STATE_OK=0
 STATE_WARNING=1
 STATE_CRITICAL=2
 
-[[ "$#" -eq "" ]] && echo "USage: empty_dir <DIR> <FILEAGE in minutes>" && exit
+[[ "$#" -eq "" ]] && echo "Usage: empty_dir <DIR> <FILEAGE in minutes>" && exit
 
 # NRF EET Failed transfer directory
 DIR=$1
